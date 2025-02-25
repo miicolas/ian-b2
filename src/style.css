@@ -7,8 +7,10 @@
 /* Police lisible et flexible */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    line-height: 1.6;
+    color: var(--dark-color);
+    line-height: var(--line-height-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 1rem;
 }
 
@@ -19,13 +21,18 @@ body {
     --dark-color: #333;
     --light-color: #f8f9fa;
     --white: #fff;
-    --focus-color: #ff8c00; /* Orange visible pour les focus */
+    --focus-color: #ff8c00;
+    --error-color: #d32f2f; /* Rouge accessible */
+    --success-color: #2e7d32; /* Vert accessible */
+    --text-size-base: 16px;
+    --line-height-base: 1.6;
 }
 
 /* Gestion du focus */
-a:focus, button:focus, input:focus, select:focus, textarea:focus {
+*:focus {
     outline: 3px solid var(--focus-color);
-    outline-offset: 2px;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.4);
 }
 
 /* Contraste des textes amélioré */
@@ -41,7 +48,8 @@ a {
     text-decoration: underline;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     text-decoration: underline;
     color: #003d6e; /* Version plus foncée pour meilleur contraste */
 }
@@ -51,6 +59,10 @@ header {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 15px 0;
+}
+
+header nav ul li a {
+    color: var(--white);
 }
 
 .navbar {
@@ -99,7 +111,8 @@ header {
     padding: 8px;
 }
 
-.nav-links a:hover, .nav-links a:focus {
+.nav-links a:hover,
+.nav-links a:focus {
     color: var(--secondary-color);
     text-decoration: underline;
 }
@@ -118,7 +131,8 @@ header {
     text-align: center;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
     background-color: #1f7d7a; /* Version plus foncée */
 }
 
@@ -174,7 +188,7 @@ header {
 .section-title h2 {
     font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .section-title p {
@@ -288,9 +302,9 @@ header {
 }
 
 .price {
+    color: var(--primary-color);
     font-size: 2rem;
     font-weight: bold;
-    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
@@ -360,12 +374,18 @@ header {
 .form-group input,
 .form-group textarea,
 .form-group select {
-    width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 2px solid #666;
     border-radius: 5px;
-    font-size: 1rem;
-    font-family: inherit;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--dark-color);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--focus-color);
 }
 
 .form-group textarea {
@@ -381,9 +401,11 @@ header {
 }
 
 .error-message {
-    color: #d10000;
-    margin-top: 5px;
-    font-size: 0.875rem;
+    color: var(--error-color);
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 4px;
+    border-left: 4px solid var(--error-color);
 }
 
 /* Footer accessible */
@@ -435,17 +457,73 @@ footer {
 
 /* Skip to content link for keyboard users */
 .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: var(--secondary-color);
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
     color: var(--white);
-    padding: 8px;
-    z-index: 100;
+    padding: 1rem;
+    z-index: 9999;
+    transition: top 0.2s;
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
 }
 
 .skip-link:focus {
     top: 0;
+}
+
+/* Focus visible */
+:focus {
+    outline: 3px solid #4a90e2;
+    outline-offset: 2px;
+}
+
+/* Taille de texte minimum pour la lisibilité */
+html {
+    font-size: var(--text-size-base);
+}
+
+/* Espacement suffisant pour la lisibilité */
+p,
+li {
+    margin-bottom: 1em;
+    max-width: 70ch; /* Longueur de ligne optimale pour la lecture */
+}
+
+/* Support du mode sombre */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dark-color: #f8f9fa;
+        --light-color: #1a1a1a;
+        --white: #1a1a1a;
+    }
+
+    body {
+        background-color: #1a1a1a;
+        color: #f8f9fa;
+    }
+
+    .feature-card,
+    .ticket-card,
+    .contact-form {
+        background-color: #2d2d2d;
+        color: #f8f9fa;
+    }
+}
+
+/* Réduction des animations si préféré */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 /* Responsive adjustments with accessible navigation */
@@ -459,41 +537,41 @@ footer {
         display: block;
         margin-top: 10px;
     }
-    
+
     .nav-links {
         flex-direction: column;
         width: 100%;
         gap: 0;
         display: none;
     }
-    
+
     .nav-links.show {
         display: flex;
     }
-    
+
     .nav-links li {
         width: 100%;
         text-align: center;
     }
-    
+
     .nav-links a {
         display: block;
         padding: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
-    
+
     .hero h1 {
         font-size: 1.75rem;
     }
-    
+
     .hero p {
         font-size: 1rem;
     }
-    
+
     .section-title h2 {
         font-size: 1.75rem;
     }
-    
+
     .ticket-cards {
         flex-direction: column;
         align-items: center;
@@ -502,5 +580,199 @@ footer {
     /* Tableau des tarifs responsive */
     .price-table {
         font-size: 0.875rem;
+    }
+}
+
+/* Support de l'agrandissement du texte */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: calc(var(--text-size-base) + 0.2vw);
+    }
+}
+
+/* Amélioration de la navigation au clavier */
+.skip-link {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    z-index: 9999;
+    transition: top 0.2s;
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Amélioration des tableaux pour l'accessibilité */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+th {
+    text-align: left;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+/* Amélioration des images pour l'accessibilité */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style pour le texte caché visuellement mais accessible aux lecteurs d'écran */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Navigation wrappers */
+.skip-nav-wrapper {
+    position: relative;
+    z-index: 1000;
+}
+
+.skip-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-wrapper {
+    max-width: var(--max-width, 1200px);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.main-nav {
+    padding: 1rem 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.main-nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.main-nav a[aria-current="page"] {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+/* Amélioration du support mobile */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-nav a {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Support du mode sombre */
+@media (prefers-color-scheme: dark) {
+    .main-nav a {
+        color: var(--light-color);
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .main-nav a[aria-current="page"] {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Support de la réduction de mouvement */
+@media (prefers-reduced-motion: reduce) {
+    .main-nav a {
+        transition: none;
+    }
+}
+
+/* Style des boutons radio */
+.radio-group {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: fit-content;
+}
+
+.radio-group input[type="radio"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+.radio-group label {
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--dark-color);
+}
+
+/* Focus visible pour les boutons radio */
+.radio-group input[type="radio"]:focus {
+    outline: 2px solid var(--focus-color);
+    outline-offset: 2px;
+}
+
+/* Support du mode sombre */
+@media (prefers-color-scheme: dark) {
+    .radio-group label {
+        color: var(--light-color);
     }
 }

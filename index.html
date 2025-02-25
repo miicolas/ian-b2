@@ -1,303 +1,393 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquarium de Paris - Découvrez les merveilles de l'océan</title>
-    <link rel="stylesheet" href="src/style.css">
-        
-</head>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <meta name="theme-color" content="#005a9e" />
+        <title>Aquarium de Paris - Découvrez les merveilles de l'océan</title>
+        <link rel="stylesheet" href="src/style.css" />
+        <meta
+            name="description"
+            content="L'Aquarium de Paris vous invite à découvrir plus de 13 000 poissons et invertébrés marins. Réservez vos billets pour une expérience immersive inoubliable."
+        />
+    </head>
 
-<body>
-    <!-- Skip to content link -->
-    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <body>
+        <!-- Skip to content link -->
+        <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-    <!-- Header -->
-    <header role="banner">
-        <div class="container navbar">
-            <div class="logo" role="heading" aria-level="1">Aquarium <span>de Paris</span></div>
-            <nav class="nav-container" role="navigation" aria-label="Menu principal">
-                <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
-                    Menu <span aria-hidden="true">&#9776;</span>
-                </button>
-                <ul id="primary-navigation" class="nav-links">
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#decouvrir">Découvrir</a></li>
-                    <li><a href="#expositions">Expositions</a></li>
-                    <li><a href="#tarifs">Tarifs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="#tickets" class="btn" role="button">Réserver des billets</a>
-        </div>
-    </header>
-
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section class="hero" id="accueil" aria-labelledby="hero-title">
-            <img class="hero-image" src="/api/placeholder/1200/600" alt="Vue panoramique de l'Aquarium de Paris" aria-hidden="true">
-            <div class="hero-content">
-                <h1 id="hero-title">Explorez les Merveilles des Océans</h1>
-                <p>Plus de 13 000 poissons et invertébrés marins vous attendent pour une expérience immersive inoubliable au cœur de Paris</p>
-                <a href="#decouvrir" class="btn">Découvrir l'Aquarium</a>
+        <!-- Header -->
+        <header role="banner">
+            <div class="container navbar">
+                <div class="logo" role="heading" aria-level="1">
+                    Aquarium <span>de Paris</span>
+                </div>
+                <nav
+                    class="nav-container"
+                    role="navigation"
+                    aria-label="Menu principal"
+                >
+                    <button
+                        id="nav-toggle"
+                        class="nav-toggle"
+                        aria-expanded="false"
+                        aria-controls="primary-navigation"
+                    >
+                        Menu <span aria-hidden="true">&#9776;</span>
+                    </button>
+                    <ul id="primary-navigation" class="nav-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#decouvrir">Découvrir</a></li>
+                        <li><a href="#expositions">Expositions</a></li>
+                        <li><a href="#tarifs">Tarifs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#tickets" class="btn" role="button"
+                    >Réserver des billets</a
+                >
             </div>
-        </section>
+        </header>
 
-        <!-- Features Section -->
-        <section class="features" id="decouvrir" aria-labelledby="features-title">
-            <div class="container">
-                <div class="section-title">
-                    <h2 id="features-title">Une Expérience Unique</h2>
-                    <p>Découvrez le plus grand aquarium de France et ses nombreuses attractions</p>
+        <main id="main-content">
+            <!-- Hero Section -->
+            <section class="hero" id="accueil" aria-labelledby="hero-title">
+                <img
+                    class="hero-image"
+                    src="/api/placeholder/1200/600"
+                    alt="Vue panoramique de l'Aquarium de Paris montrant les grands bassins et les visiteurs"
+                    loading="lazy"
+                />
+                <div class="hero-content">
+                    <h1 id="hero-title">Explorez les Merveilles des Océans</h1>
+                    <p>
+                        Plus de 13 000 poissons et invertébrés marins vous
+                        attendent pour une expérience immersive inoubliable au
+                        cœur de Paris
+                    </p>
+                    <a href="#decouvrir" class="btn">Découvrir l'Aquarium</a>
                 </div>
-                <div class="features-grid">
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">🐠</div>
-                        <h3>750 Espèces Marines</h3>
-                        <p>Découvrez une biodiversité exceptionnelle avec des espèces venues des quatre coins du monde, des récifs coralliens aux abysses.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">🦈</div>
-                        <h3>Bassin des Requins</h3>
-                        <p>Admirez nos requins de près dans notre bassin géant de 3 millions de litres d'eau, une expérience à couper le souffle.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">🧜‍♀️</div>
-                        <h3>Spectacle des Sirènes</h3>
-                        <p>Assistez à notre spectacle unique où des performeurs incarnent des sirènes et nagent gracieusement parmi les poissons dans nos bassins transparents.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Gallery Section -->
-        <section class="gallery" id="expositions" aria-labelledby="gallery-title">
-            <div class="container">
-                <div class="section-title">
-                    <h2 id="gallery-title">Nos Plus Belles Expositions</h2>
-                    <p>Plongez dans un monde fascinant à travers nos expositions thématiques</p>
+            <!-- Features Section -->
+            <section
+                class="features"
+                id="decouvrir"
+                aria-labelledby="features-title"
+            >
+                <div class="container">
+                    <div class="section-title">
+                        <h2 id="features-title">Une Expérience Unique</h2>
+                        <p>
+                            Découvrez le plus grand aquarium de France et ses
+                            nombreuses attractions
+                        </p>
+                    </div>
+                    <div class="features-grid">
+                        <article class="feature-card">
+                            <div class="feature-icon" aria-hidden="true">
+                                🐠
+                            </div>
+                            <h3 id="feature-1">750 Espèces Marines</h3>
+                            <p aria-labelledby="feature-1">
+                                Découvrez une biodiversité exceptionnelle avec
+                                des espèces venues des quatre coins du monde,
+                                des récifs coralliens aux abysses.
+                            </p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon" aria-hidden="true">
+                                🦈
+                            </div>
+                            <h3>Bassin des Requins</h3>
+                            <p>
+                                Admirez nos requins de près dans notre bassin
+                                géant de 3 millions de litres d'eau, une
+                                expérience à couper le souffle.
+                            </p>
+                        </article>
+                        <article class="feature-card">
+                            <div class="feature-icon" aria-hidden="true">
+                                🧜‍♀️
+                            </div>
+                            <h3>Spectacle des Sirènes</h3>
+                            <p>
+                                Assistez à notre spectacle unique où des
+                                performeurs incarnent des sirènes et nagent
+                                gracieusement parmi les poissons dans nos
+                                bassins transparents.
+                            </p>
+                        </article>
+                    </div>
                 </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <figure>
-                            <img src="https://la1ere.francetvinfo.fr/image/NTfKMAJ8W9btqD3uevDyCQw8JX8/930x620/filters:format(webp)/outremer/2019/10/03/5d9661e1f1042_img_2844-1087403.jpg" alt="Vue des récifs coralliens multicolores de l'Aquarium de Paris">
-                            <figcaption>Récifs coralliens colorés</figcaption>
-                        </figure>
-                    </div>
-                    <div class="gallery-item">
-                        <figure>
-                            <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1500,h_1000/https://www.aquariumdeparis.com/wp-content/uploads/2019/10/meduses-01.jpg" alt="Méduses lumineuses flottant gracieusement dans un bassin bleu">
-                            <figcaption>Méduses phosphorescentes</figcaption>
-                        </figure>
-                    </div>
-                    <div class="gallery-item">
-                        <figure>
-                            <img src="https://www.visitsealife.com/paris/media/yezfi5rs/photo-atlantis.jpg" alt="Requin tigre nageant majestueusement dans le grand bassin">
-                            <figcaption>Bassin des requins</figcaption>
-                        </figure>
-                    </div>
-                    <div class="gallery-item">
-                        <figure>
-                            <img src="https://www.fishipedia.fr/wp-content/uploads/2019/11/P4232351-1.jpg" alt="Banc de poissons tropicaux aux couleurs vives">
-                            <figcaption>Poissons tropicaux</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Tickets Section -->
-        <section class="tickets" id="tarifs" aria-labelledby="tickets-title">
-            <div class="container">
-                <h2 id="tickets-title">Réservez vos billets</h2>
-                <p>Profitez d'une journée inoubliable à l'Aquarium de Paris avec nos différentes formules adaptées à tous</p>
-                <div class="ticket-cards">
-                    <div class="ticket-card">
-                        <h3 id="adult-ticket">Billet Adulte</h3>
-                        <div class="price" aria-labelledby="adult-ticket">24,90€</div>
-                        <ul aria-labelledby="adult-ticket">
-                            <li>Accès à toutes les expositions</li>
-                            <li>Spectacle des sirènes</li>
-                            <li>Film au cinéma 4D</li>
-                            <li>Animations pédagogiques</li>
-                        </ul>
-                        <a href="#reservation" class="btn" aria-describedby="adult-ticket">Réserver</a>
+            <!-- Gallery Section -->
+            <section
+                class="gallery"
+                id="expositions"
+                aria-labelledby="gallery-title"
+            >
+                <div class="container">
+                    <div class="section-title">
+                        <h2 id="gallery-title">Nos Plus Belles Expositions</h2>
+                        <p>
+                            Plongez dans un monde fascinant à travers nos
+                            expositions thématiques
+                        </p>
                     </div>
-                    <div class="ticket-card">
-                        <h3 id="child-ticket">Billet Enfant</h3>
-                        <div class="price" aria-labelledby="child-ticket">16,90€</div>
-                        <ul aria-labelledby="child-ticket">
-                            <li>Accès à toutes les expositions</li>
-                            <li>Spectacle des sirènes</li>
-                            <li>Film au cinéma 4D</li>
-                            <li>Livret pédagogique offert</li>
-                        </ul>
-                        <a href="#reservation" class="btn" aria-describedby="child-ticket">Réserver</a>
-                    </div>
-                    <div class="ticket-card">
-                        <h3 id="family-ticket">Pass Famille</h3>
-                        <div class="price" aria-labelledby="family-ticket">79,90€</div>
-                        <ul aria-labelledby="family-ticket">
-                            <li>Pour 2 adultes et 2 enfants</li>
-                            <li>Accès à toutes les expositions</li>
-                            <li>Spectacle des sirènes</li>
-                            <li>Film au cinéma 4D</li>
-                            <li>Atelier découverte inclus</li>
-                        </ul>
-                        <a href="#reservation" class="btn" aria-describedby="family-ticket">Réserver</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact" id="contact" aria-labelledby="contact-title">
-            <div class="container">
-                <div class="section-title">
-                    <h2 id="contact-title">Nous Contacter</h2>
-                    <p>Une question ? Besoin d'informations ? N'hésitez pas à nous écrire</p>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <h3>Informations pratiques</h3>
-                        <p><strong>Adresse:</strong> 5 Avenue Albert de Mun, 75016 Paris</p>
-                        <p><strong>Téléphone:</strong> <a href="tel:+33140692323">01 40 69 23 23</a></p>
-                        <p><strong>Email:</strong> <a href="mailto:contact@aquariumdeparis.fr">contact@aquariumdeparis.fr</a></p>
-                        <p><strong>Horaires:</strong></p>
-                        <ul>
-                            <li>Lundi - Vendredi: 10h - 19h</li>
-                            <li>Samedi - Dimanche: 10h - 20h</li>
-                        </ul>
-                        <div role="region" aria-label="Accessibilité">
-                            <h3>Accessibilité</h3>
-                            <p>L'Aquarium de Paris est accessible aux personnes à mobilité réduite. Des fauteuils roulants sont disponibles gratuitement à l'accueil.</p>
-                            <p>Un parcours tactile et des visites guidées en langue des signes française (LSF) sont disponibles sur réservation.</p>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <figure>
+                                <img
+                                    src="https://la1ere.francetvinfo.fr/image/NTfKMAJ8W9btqD3uevDyCQw8JX8/930x620/filters:format(webp)/outremer/2019/10/03/5d9661e1f1042_img_2844-1087403.jpg"
+                                    alt="Vue des récifs coralliens multicolores de l'Aquarium de Paris avec des poissons tropicaux nageant entre les coraux"
+                                    loading="lazy"
+                                    width="930"
+                                    height="620"
+                                />
+                                <figcaption id="caption-1">
+                                    Récifs coralliens colorés
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="gallery-item">
+                            <figure>
+                                <img
+                                    src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1500,h_1000/https://www.aquariumdeparis.com/wp-content/uploads/2019/10/meduses-01.jpg"
+                                    alt="Méduses lumineuses flottant gracieusement dans un bassin bleu"
+                                />
+                                <figcaption>
+                                    Méduses phosphorescentes
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="gallery-item">
+                            <figure>
+                                <img
+                                    src="https://www.visitsealife.com/paris/media/yezfi5rs/photo-atlantis.jpg"
+                                    alt="Requin tigre nageant majestueusement dans le grand bassin"
+                                />
+                                <figcaption>Bassin des requins</figcaption>
+                            </figure>
+                        </div>
+                        <div class="gallery-item">
+                            <figure>
+                                <img
+                                    src="https://www.fishipedia.fr/wp-content/uploads/2019/11/P4232351-1.jpg"
+                                    alt="Banc de poissons tropicaux aux couleurs vives"
+                                />
+                                <figcaption>Poissons tropicaux</figcaption>
+                            </figure>
                         </div>
                     </div>
-                    <div class="contact-form">
-                        <form id="contact-form" aria-labelledby="form-title">
-                            <h3 id="form-title">Formulaire de contact</h3>
-                            <div class="form-group">
-                                <label for="name" class="required-field">Nom</label>
-                                <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+            </section>
+
+            <!-- Tickets Section -->
+            <section
+                class="tickets"
+                id="tarifs"
+                aria-labelledby="tickets-title"
+            >
+                <div class="container">
+                    <h2 id="tickets-title">Réservez vos billets</h2>
+                    <p>
+                        Profitez d'une journée inoubliable à l'Aquarium de Paris
+                        avec nos différentes formules adaptées à tous
+                    </p>
+                    <div class="ticket-cards">
+                        <div class="ticket-card" role="article">
+                            <h3 id="adult-ticket">Billet Adulte</h3>
+                            <div
+                                class="price"
+                                aria-label="Prix : 24 euros et 90 centimes"
+                            >
+                                24,90€
                             </div>
-                            <div class="form-group">
-                                <label for="email" class="required-field">Email</label>
-                                <input type="email" id="email" name="email" required aria-required="true">
-                                <span class="help-text" id="email-help">Format attendu: nom@domaine.com</span>
+                            <ul aria-labelledby="adult-ticket">
+                                <li>Accès à toutes les expositions</li>
+                                <li>Spectacle des sirènes</li>
+                                <li>Film au cinéma 4D</li>
+                                <li>Animations pédagogiques</li>
+                            </ul>
+                            <a
+                                href="#reservation"
+                                class="btn"
+                                aria-label="Réserver un billet adulte à 24 euros 90"
+                                >Réserver</a
+                            >
+                        </div>
+                        <div class="ticket-card">
+                            <h3 id="child-ticket">Billet Enfant</h3>
+                            <div class="price" aria-labelledby="child-ticket">
+                                16,90€
                             </div>
-                            <div class="form-group">
-                                <label for="subject">Sujet</label>
-                                <select id="subject" name="subject">
-                                    <option value="">Sélectionnez un sujet</option>
-                                    <option value="reservation">Réservation</option>
-                                    <option value="information">Demande d'information</option>
-                                    <option value="accessibility">Accessibilité</option>
-                                    <option value="other">Autre</option>
-                                </select>
+                            <ul aria-labelledby="child-ticket">
+                                <li>Accès à toutes les expositions</li>
+                                <li>Spectacle des sirènes</li>
+                                <li>Film au cinéma 4D</li>
+                                <li>Livret pédagogique offert</li>
+                            </ul>
+                            <a
+                                href="#reservation"
+                                class="btn"
+                                aria-describedby="child-ticket"
+                                >Réserver</a
+                            >
+                        </div>
+                        <div class="ticket-card">
+                            <h3 id="family-ticket">Pass Famille</h3>
+                            <div class="price" aria-labelledby="family-ticket">
+                                79,90€
                             </div>
-                            <div class="form-group">
-                                <label for="message" class="required-field">Message</label>
-                                <textarea id="message" name="message" required aria-required="true"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <fieldset>
-                                    <legend>Comment souhaitez-vous être contacté?</legend>
-                                    <div>
-                                        <input type="radio" id="contact-email" name="contact-method" value="email" checked>
-                                        <label for="contact-email">Par email</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
-                                        <label for="contact-phone">Par téléphone</label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <label for="newsletter">Je souhaite recevoir la newsletter mensuelle</label>
-                            </div>
-                            <button type="submit" class="btn">Envoyer</button>
-                            <p class="help-text">Les champs marqués d'un astérisque (*) sont obligatoires</p>
-                        </form>
+                            <ul aria-labelledby="family-ticket">
+                                <li>Pour 2 adultes et 2 enfants</li>
+                                <li>Accès à toutes les expositions</li>
+                                <li>Spectacle des sirènes</li>
+                                <li>Film au cinéma 4D</li>
+                                <li>Atelier découverte inclus</li>
+                            </ul>
+                            <a
+                                href="#reservation"
+                                class="btn"
+                                aria-describedby="family-ticket"
+                                >Réserver</a
+                            >
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <!-- Footer -->
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3 id="about-links">Aquarium de Paris</h3>
-                    <ul aria-labelledby="about-links">
-                        <li><a href="#">À propos de nous</a></li>
-                        <li><a href="#">Actualités</a></li>
-                        <li><a href="#">Presse</a></li>
-                        <li><a href="#">Recrutement</a></li>
-                    </ul>
+            <!-- Contact Section -->
+        </main>
+
+        <!-- Footer -->
+        <footer role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3 id="about-links">Aquarium de Paris</h3>
+                        <ul aria-labelledby="about-links">
+                            <li><a href="#">À propos de nous</a></li>
+                            <li><a href="#">Actualités</a></li>
+                            <li><a href="#">Presse</a></li>
+                            <li><a href="#">Recrutement</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 id="visit-links">Visiter</h3>
+                        <ul aria-labelledby="visit-links">
+                            <li><a href="#">Expositions</a></li>
+                            <li><a href="#">Animations</a></li>
+                            <li><a href="#">Événements</a></li>
+                            <li><a href="#">Tarifs & Horaires</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 id="services-links">Services</h3>
+                        <ul aria-labelledby="services-links">
+                            <li><a href="#">Anniversaires</a></li>
+                            <li><a href="#">Groupes scolaires</a></li>
+                            <li><a href="#">Privatisation</a></li>
+                            <li><a href="#">Restaurant</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 id="social-links">Suivez-nous</h3>
+                        <ul aria-labelledby="social-links">
+                            <li>
+                                <a
+                                    href="#"
+                                    aria-label="Facebook de l'Aquarium de Paris"
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    aria-label="Instagram de l'Aquarium de Paris"
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    aria-label="Twitter de l'Aquarium de Paris"
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    aria-label="YouTube de l'Aquarium de Paris"
+                                    >YouTube</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h3 id="visit-links">Visiter</h3>
-                    <ul aria-labelledby="visit-links">
-                        <li><a href="#">Expositions</a></li>
-                        <li><a href="#">Animations</a></li>
-                        <li><a href="#">Événements</a></li>
-                        <li><a href="#">Tarifs & Horaires</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3 id="services-links">Services</h3>
-                    <ul aria-labelledby="services-links">
-                        <li><a href="#">Anniversaires</a></li>
-                        <li><a href="#">Groupes scolaires</a></li>
-                        <li><a href="#">Privatisation</a></li>
-                        <li><a href="#">Restaurant</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3 id="social-links">Suivez-nous</h3>
-                    <ul aria-labelledby="social-links">
-                        <li><a href="#" aria-label="Facebook de l'Aquarium de Paris">Facebook</a></li>
-                        <li><a href="#" aria-label="Instagram de l'Aquarium de Paris">Instagram</a></li>
-                        <li><a href="#" aria-label="Twitter de l'Aquarium de Paris">Twitter</a></li>
-                        <li><a href="#" aria-label="YouTube de l'Aquarium de Paris">YouTube</a></li>
-                    </ul>
+                <div class="copyright">
+                    <p>&copy; 2025 Aquarium de Paris. Tous droits réservés.</p>
+                    <p>
+                        <a href="#">Politique de confidentialité</a> |
+                        <a href="#">Mentions légales</a> |
+                        <a href="#">Accessibilité</a>
+                    </p>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Aquarium de Paris. Tous droits réservés.</p>
-                <p><a href="#">Politique de confidentialité</a> | <a href="#">Mentions légales</a> | <a href="#">Accessibilité</a></p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script>
-        // Script pour la navigation responsive accessible
-        document.addEventListener('DOMContentLoaded', function() {
-            const navToggle = document.getElementById('nav-toggle');
-            const primaryNav = document.getElementById('primary-navigation');
-            
-            if (navToggle && primaryNav) {
-                navToggle.addEventListener('click', function() {
-                    const expanded = this.getAttribute('aria-expanded') === 'true';
-                    this.setAttribute('aria-expanded', !expanded);
-                    primaryNav.classList.toggle('show');
-                });
-            }
+        <script>
+            // Script pour la navigation responsive accessible
+            document.addEventListener("DOMContentLoaded", function () {
+                const navToggle = document.getElementById("nav-toggle");
+                const primaryNav =
+                    document.getElementById("primary-navigation");
 
-            // Gestion du formulaire
-            const contactForm = document.getElementById('contact-form');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    // Ici vous ajouteriez la vérification du formulaire
-                    alert('Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.');
-                });
-            }
-        });
-    </script>
-</body>
+                if (navToggle && primaryNav) {
+                    navToggle.addEventListener("click", function () {
+                        const expanded =
+                            this.getAttribute("aria-expanded") === "true";
+                        this.setAttribute("aria-expanded", !expanded);
+                        primaryNav.classList.toggle("show");
+
+                        // Ajout d'une annonce pour les lecteurs d'écran
+                        const status = expanded ? "fermé" : "ouvert";
+                        const announcement = document.createElement("div");
+                        announcement.setAttribute("role", "status");
+                        announcement.setAttribute("aria-live", "polite");
+                        announcement.textContent = `Menu ${status}`;
+                        document.body.appendChild(announcement);
+                        setTimeout(() => announcement.remove(), 1000);
+                    });
+
+                    // Gestion de la navigation au clavier
+                    document.addEventListener("keydown", function (e) {
+                        if (
+                            e.key === "Escape" &&
+                            primaryNav.classList.contains("show")
+                        ) {
+                            navToggle.click();
+                        }
+                    });
+                }
+
+                // Gestion du formulaire
+                const contactForm = document.getElementById("contact-form");
+                if (contactForm) {
+                    contactForm.addEventListener("submit", function (event) {
+                        event.preventDefault();
+                        // Ici vous ajouteriez la vérification du formulaire
+                        alert(
+                            "Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais."
+                        );
+                    });
+                }
+            });
+        </script>
+    </body>
 </html>
