@@ -14,17 +14,18 @@ body {
 }
 
 :root {
-    --primary-color: #005a9e;
-    --secondary-color: #3bafaf;
-    --dark-color: #333;
+    --primary-color: #0056b3;
+    --secondary-color: #008080;
+    --dark-color: #222222;
     --light-color: #f8f9fa;
     --white: #fff;
-    --focus-color: #ff8c00;
-    --error-color: #d32f2f;
+    --focus-color: #ff6600;
+    --error-color: #d32f2f; 
     --success-color: #2e7d32;
     --text-size-base: 16px;
     --line-height-base: 1.6;
 }
+
 
 *:focus {
     outline: 3px solid var(--focus-color);
@@ -39,14 +40,16 @@ body {
 }
 
 a {
-    color: var(--primary-color);
+    color: #0056b3;
     text-decoration: underline;
+    font-weight: 600;
 }
 
 a:hover,
 a:focus {
     text-decoration: underline;
-    color: #003d6e;
+    color: #003366;
+    background-color: #f0f0f0;
 }
 
 header {
@@ -72,7 +75,8 @@ header nav ul li a {
 }
 
 .logo span {
-    color: var(--secondary-color);
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .nav-container {
@@ -97,22 +101,23 @@ header nav ul li a {
 }
 
 .nav-links a {
-    color: var(--white);
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     transition: color 0.3s;
     padding: 8px;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-    color: var(--secondary-color);
+    color: #ffffff;
+    background-color: #00447e;
     text-decoration: underline;
 }
 
 .btn {
-    background-color: var(--secondary-color);
-    color: var(--white);
+    background-color: #008080;
+    color: #ffffff;
     border: none;
     padding: 12px 24px;
     font-size: 1rem;
@@ -125,14 +130,14 @@ header nav ul li a {
 
 .btn:hover,
 .btn:focus {
-    background-color: #1f7d7a;
+    background-color: #006666;
 }
 
 .hero {
     position: relative;
     padding: 80px 0;
-    background-color: #004a80;
-    color: var(--white);
+    background-color: #003366;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -396,8 +401,8 @@ header nav ul li a {
 }
 
 footer {
-    background-color: var(--dark-color);
-    color: var(--white);
+    background-color: #111111;
+    color: #ffffff;
     padding: 60px 0 30px;
 }
 
@@ -411,7 +416,8 @@ footer {
 .footer-column h3 {
     font-size: 1.25rem;
     margin-bottom: 20px;
-    color: var(--secondary-color);
+    color: #66cccc;
+    font-weight: bold;
 }
 
 .footer-column ul {
@@ -423,22 +429,53 @@ footer {
 }
 
 .footer-column a {
-    color: #ddd;
+    color: #ffffff;
     text-decoration: underline;
+    font-weight: bold;
     transition: color 0.3s;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #2b2b2b;
 }
 
 .footer-column a:hover,
 .footer-column a:focus {
-    color: var(--secondary-color);
+    color: #ffffff;
+    background-color: #444444;
     text-decoration: underline;
+    box-shadow: 0 0 0 2px #66cccc;
+}
+
+footer a[href="#"], 
+.footer a[href="#"],
+a.legal-link {
+    color: #ffffff !important;
+    background-color: #333333;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 3px 0;
+    text-decoration: underline;
+    border: 1px solid #555555;
+}
+
+footer a[href="#"]:hover,
+.footer a[href="#"]:hover,
+a.legal-link:hover {
+    background-color: #555555;
+    color: #ffffff !important;
+    text-decoration: underline;
+    border-color: #777777;
 }
 
 .copyright {
     text-align: center;
-    border-top: 1px solid #444;
+    border-top: 1px solid #555555;
     padding-top: 20px;
-    color: #999;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 .skip-link {
@@ -473,6 +510,7 @@ html {
 
 p,
 li {
+
     max-width: 70ch;
 }
 
@@ -581,6 +619,7 @@ li {
     min-width: 200px;
     text-decoration: none;
     border-radius: 0 0 4px 4px;
+    color: white;
 }
 
 .skip-link:focus {
@@ -741,4 +780,40 @@ img {
     .radio-group label {
         color: var(--light-color);
     }
+}
+
+/* Assurer que les liens de bas de page spécifiques ont un bon contraste */
+footer a[href*="politique"], 
+footer a[href*="mentions"], 
+footer a[href*="accessibilite"] {
+    background-color: #333333;
+    color: #ffffff !important;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+footer a[href*="politique"]:hover, 
+footer a[href*="mentions"]:hover, 
+footer a[href*="accessibilite"]:hover {
+    background-color: #555555;
+    text-decoration: underline;
+}
+
+/* Style spécifique pour tous les liens de pied de page */
+footer a {
+    color: #ffffff !important;
+    background-color: #2b2b2b;
+    padding: 5px 8px;
+    border-radius: 3px;
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+}
+
+footer a:hover,
+footer a:focus {
+    background-color: #555555;
+    text-decoration: underline;
+    color: #ffffff !important;
 }

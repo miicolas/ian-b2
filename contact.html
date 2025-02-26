@@ -60,15 +60,13 @@
                     <div class="contact-container">
                         <div class="contact-info">
                             <section aria-labelledby="practical-info">
-                                <h2 id="practical-info" tabindex="0">
+                                <h2 id="practical-info">
                                     Informations pratiques
                                 </h2>
                                 <address>
                                     <p>
                                         <strong>Adresse : </strong>
                                         <span
-                                            tabindex="0"
-                                            aria-label="Adresse 5 Avenue Albert de Mun, 75016"
                                             >5 Avenue Albert de Mun, 75016
                                             Paris</span
                                         >
@@ -97,90 +95,61 @@
                                 aria-labelledby="opening-hours"
                             >
                                 <h2 id="opening-hours">Horaires d'ouverture</h2>
-                                <div
-                                    class="table-responsive"
-                                    role="region"
-                                    aria-labelledby="opening-hours"
-                                    tabindex="0"
-                                >
-                                    <table>
-                                        <caption id="hours-caption">
-                                            Horaires d'ouverture de l'Aquarium
-                                            de Paris
-                                        </caption>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col" id="col-days">
-                                                    Jours
-                                                </th>
-                                                <th scope="col" id="col-hours">
-                                                    Horaires
-                                                </th>
-                                                <th
-                                                    scope="col"
-                                                    id="col-last-entry"
+                                <table aria-describedby="table-description">
+                                    <caption>
+                                        Horaires d'ouverture de l'Aquarium de
+                                        Paris
+                                    </caption>
+                                    <p
+                                        id="table-description"
+                                        class="visually-hidden"
+                                    >
+                                        Ce tableau présente les horaires
+                                        d'ouverture et les dernières admissions
+                                        selon les jours de la semaine
+                                    </p>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" tabindex="0">Jours</th>
+                                            <th scope="col" tabindex="0">Horaires</th>
+                                            <th scope="col" tabindex="0">
+                                                Dernière admission
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" tabindex="0">
+                                                Lundi à Vendredi
+                                            </th>
+                                            <td tabindex="0">10h00 - 19h00</td>
+                                            <td tabindex="0">18h00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" tabindex="0">
+                                                Samedi et Dimanche
+                                            </th>
+                                            <td tabindex="0">10h00 - 20h00</td>
+                                            <td tabindex="0">19h00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" tabindex="0">Jours fériés</th>
+                                            <td tabindex="0">10h00 - 20h00</td>
+                                            <td tabindex="0">19h00</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="3" tabindex="0">
+                                                <small
+                                                    >* L'aquarium est fermé le
+                                                    25 décembre et le 1er
+                                                    janvier</small
                                                 >
-                                                    Dernière admission
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th
-                                                    scope="row"
-                                                    headers="col-days"
-                                                >
-                                                    Lundi à Vendredi
-                                                </th>
-                                                <td headers="col-hours">
-                                                    10h00 - 19h00
-                                                </td>
-                                                <td headers="col-last-entry">
-                                                    18h00
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th
-                                                    scope="row"
-                                                    headers="col-days"
-                                                >
-                                                    Samedi et Dimanche
-                                                </th>
-                                                <td headers="col-hours">
-                                                    10h00 - 20h00
-                                                </td>
-                                                <td headers="col-last-entry">
-                                                    19h00
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th
-                                                    scope="row"
-                                                    headers="col-days"
-                                                >
-                                                    Jours fériés
-                                                </th>
-                                                <td headers="col-hours">
-                                                    10h00 - 20h00
-                                                </td>
-                                                <td headers="col-last-entry">
-                                                    19h00
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <td colspan="3">
-                                                    <small
-                                                        >* L'aquarium est fermé
-                                                        le 25 décembre et le 1er
-                                                        janvier</small
-                                                    >
-                                                </td>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
                             </section>
 
                             <section
@@ -188,79 +157,40 @@
                                 aria-labelledby="group-rates"
                             >
                                 <h2 id="group-rates">Tarifs de groupe</h2>
-                                <div
-                                    class="table-responsive"
-                                    role="region"
-                                    aria-labelledby="group-rates"
-                                    tabindex="0"
-                                >
-                                    <table>
-                                        <caption id="rates-caption">
-                                            Tarifs pour les groupes à l'Aquarium
-                                            de Paris
-                                        </caption>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col" id="col-group">
-                                                    Type de groupe
-                                                </th>
-                                                <th scope="col" id="col-price">
-                                                    Prix par personne
-                                                </th>
-                                                <th
-                                                    scope="col"
-                                                    id="col-minimum"
-                                                >
-                                                    Minimum participants
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th
-                                                    scope="row"
-                                                    headers="col-group"
-                                                >
-                                                    Scolaires
-                                                </th>
-                                                <td headers="col-price">
-                                                    12,90€
-                                                </td>
-                                                <td headers="col-minimum">
-                                                    15 personnes
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th
-                                                    scope="row"
-                                                    headers="col-group"
-                                                >
-                                                    Associations
-                                                </th>
-                                                <td headers="col-price">
-                                                    14,90€
-                                                </td>
-                                                <td headers="col-minimum">
-                                                    20 personnes
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th
-                                                    scope="row"
-                                                    headers="col-group"
-                                                >
-                                                    Entreprises
-                                                </th>
-                                                <td headers="col-price">
-                                                    19,90€
-                                                </td>
-                                                <td headers="col-minimum">
-                                                    25 personnes
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                <table>
+                                    <caption class="visually-hidden">
+                                        Tarifs pour les groupes à l'Aquarium de
+                                        Paris
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" tabindex="0">Type de groupe</th>
+                                            <th scope="col" tabindex="0">
+                                                Prix par personne
+                                            </th>
+                                            <th scope="col" tabindex="0">
+                                                Minimum participants
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" tabindex="0">Scolaires</th>
+                                            <td tabindex="0">12,90€</td>
+                                            <td tabindex="0">15 personnes</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" tabindex="0">Associations</th>
+                                            <td tabindex="0">14,90€</td>
+                                            <td tabindex="0">20 personnes</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" tabindex="0">Entreprises</th>
+                                            <td tabindex="0">19,90€</td>
+                                            <td tabindex="0">25 personnes</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </section>
 
                             <section aria-labelledby="accessibility-info">
@@ -310,10 +240,12 @@
                                         aria-required="true"
                                         aria-describedby="name-error name-description"
                                         autocomplete="name"
+                                        placeholder="Exemple : John Doe"
                                     />
                                     <span
                                         id="name-description"
                                         class="visually-hidden"
+
                                     >
                                         Entrez votre nom complet
                                     </span>
@@ -335,6 +267,7 @@
                                         required
                                         aria-required="true"
                                         aria-describedby="email-help email-error"
+                                        placeholder="Exemple : john.doe@example.com"
                                     />
                                     <span id="email-help" class="help-text"
                                         >Format attendu : nom@domaine.com</span
@@ -412,6 +345,7 @@
                                                 id="contact-phone"
                                                 name="contact-method"
                                                 value="phone"
+                                                tabindex="0"
                                             />
                                             <label for="contact-phone"
                                                 >Par téléphone</label
@@ -535,52 +469,5 @@
                 });
             });
         </script>
-
-        <style>
-            .table-responsive {
-                overflow-x: auto;
-                margin-bottom: 1rem;
-                max-width: 100%;
-            }
-
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 1rem 0;
-            }
-
-            caption {
-                padding: 0.5rem;
-                font-weight: bold;
-                text-align: left;
-                caption-side: top;
-                color: #333;
-                background-color: #f5f5f5;
-            }
-
-            th,
-            td {
-                padding: 0.75rem;
-                vertical-align: top;
-                border: 1px solid #dee2e6;
-                text-align: left;
-            }
-
-            thead th {
-                vertical-align: bottom;
-                background-color: #005fa3;
-                color: white;
-                font-weight: bold;
-            }
-
-            tbody tr:nth-of-type(odd) {
-                background-color: rgba(0, 0, 0, 0.05);
-            }
-
-            .table-responsive:focus {
-                outline: 2px solid #005fa3;
-                outline-offset: 2px;
-            }
-        </style>
     </body>
 </html>
