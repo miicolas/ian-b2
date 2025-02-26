@@ -15,17 +15,16 @@ body {
 
 :root {
     --primary-color: #005a9e;
-    --secondary-color: #3bafaf; 
+    --secondary-color: #3bafaf;
     --dark-color: #333;
     --light-color: #f8f9fa;
     --white: #fff;
     --focus-color: #ff8c00;
-    --error-color: #d32f2f; 
+    --error-color: #d32f2f;
     --success-color: #2e7d32;
     --text-size-base: 16px;
     --line-height-base: 1.6;
 }
-
 
 *:focus {
     outline: 3px solid var(--focus-color);
@@ -113,7 +112,7 @@ header nav ul li a {
 
 .btn {
     background-color: var(--secondary-color);
-    color: var(--dark-color);
+    color: var(--white);
     border: none;
     padding: 12px 24px;
     font-size: 1rem;
@@ -474,7 +473,6 @@ html {
 
 p,
 li {
-
     max-width: 70ch;
 }
 
