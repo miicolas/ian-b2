@@ -15,7 +15,7 @@ body {
 
 :root {
     --primary-color: #005a9e;
-    --secondary-color: #2baaa6; 
+    --secondary-color: #3bafaf; 
     --dark-color: #333;
     --light-color: #f8f9fa;
     --white: #fff;
@@ -474,7 +474,7 @@ html {
 
 p,
 li {
-    margin-bottom: 1em;
+
     max-width: 70ch;
 }
 
