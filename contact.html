@@ -110,37 +110,37 @@
                                     </p>
                                     <thead>
                                         <tr>
-                                            <th scope="col">Jours</th>
-                                            <th scope="col">Horaires</th>
-                                            <th scope="col">
+                                            <th scope="col" tabindex="0">Jours</th>
+                                            <th scope="col" tabindex="0">Horaires</th>
+                                            <th scope="col" tabindex="0">
                                                 Dernière admission
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">
+                                            <th scope="row" tabindex="0">
                                                 Lundi à Vendredi
                                             </th>
-                                            <td>10h00 - 19h00</td>
-                                            <td>18h00</td>
+                                            <td tabindex="0">10h00 - 19h00</td>
+                                            <td tabindex="0">18h00</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">
+                                            <th scope="row" tabindex="0">
                                                 Samedi et Dimanche
                                             </th>
-                                            <td>10h00 - 20h00</td>
-                                            <td>19h00</td>
+                                            <td tabindex="0">10h00 - 20h00</td>
+                                            <td tabindex="0">19h00</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Jours fériés</th>
-                                            <td>10h00 - 20h00</td>
-                                            <td>19h00</td>
+                                            <th scope="row" tabindex="0">Jours fériés</th>
+                                            <td tabindex="0">10h00 - 20h00</td>
+                                            <td tabindex="0">19h00</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <td colspan="3">
+                                            <td colspan="3" tabindex="0">
                                                 <small
                                                     >* L'aquarium est fermé le
                                                     25 décembre et le 1er
@@ -164,30 +164,30 @@
                                     </caption>
                                     <thead>
                                         <tr>
-                                            <th scope="col">Type de groupe</th>
-                                            <th scope="col">
+                                            <th scope="col" tabindex="0">Type de groupe</th>
+                                            <th scope="col" tabindex="0">
                                                 Prix par personne
                                             </th>
-                                            <th scope="col">
+                                            <th scope="col" tabindex="0">
                                                 Minimum participants
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">Scolaires</th>
-                                            <td>12,90€</td>
-                                            <td>15 personnes</td>
+                                            <th scope="row" tabindex="0">Scolaires</th>
+                                            <td tabindex="0">12,90€</td>
+                                            <td tabindex="0">15 personnes</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Associations</th>
-                                            <td>14,90€</td>
-                                            <td>20 personnes</td>
+                                            <th scope="row" tabindex="0">Associations</th>
+                                            <td tabindex="0">14,90€</td>
+                                            <td tabindex="0">20 personnes</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Entreprises</th>
-                                            <td>19,90€</td>
-                                            <td>25 personnes</td>
+                                            <th scope="row" tabindex="0">Entreprises</th>
+                                            <td tabindex="0">19,90€</td>
+                                            <td tabindex="0">25 personnes</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -240,10 +240,12 @@
                                         aria-required="true"
                                         aria-describedby="name-error name-description"
                                         autocomplete="name"
+                                        placeholder="Exemple : John Doe"
                                     />
                                     <span
                                         id="name-description"
                                         class="visually-hidden"
+
                                     >
                                         Entrez votre nom complet
                                     </span>
@@ -265,6 +267,7 @@
                                         required
                                         aria-required="true"
                                         aria-describedby="email-help email-error"
+                                        placeholder="Exemple : john.doe@example.com"
                                     />
                                     <span id="email-help" class="help-text"
                                         >Format attendu : nom@domaine.com</span
@@ -342,6 +345,7 @@
                                                 id="contact-phone"
                                                 name="contact-method"
                                                 value="phone"
+                                                tabindex="0"
                                             />
                                             <label for="contact-phone"
                                                 >Par téléphone</label
