@@ -267,6 +267,7 @@
                                         required
                                         aria-required="true"
                                         aria-describedby="email-help email-error"
+                                        autocomplete="email"
                                         placeholder="Exemple : john.doe@example.com"
                                     />
                                     <span id="email-help" class="help-text"
@@ -281,7 +282,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="subject">Sujet</label>
-                                    <select id="subject" name="subject">
+                                    <select id="subject" name="subject" tabindex="0">
                                         <option value="">
                                             Sélectionnez un sujet
                                         </option>
